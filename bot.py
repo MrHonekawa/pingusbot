@@ -25,7 +25,7 @@ async def start(event):
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/PingUs'),
+        Button.url('📣 Channel', 'https://t.me/PingUsNow'),
         Button.url('📦 Source', 'https://github.com/MrHonekawa/PingUsBot')
       ]
     )
@@ -33,13 +33,13 @@ async def start(event):
 
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of PingUsBot**\n\nCommand: /pingall\n__You can use this command with text what you want to mention others.__\n`Example: /pingall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nSupport [Group](https://t.me/PingUs) on Telegram"
+  helptext = "**Help Menu of PingUsBot**\n\nCommand: /pingall\n__You can use this command with text what you want to mention others.__\n`Example: /pingall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nSupport [Group](https://t.me/PingUsNow) on Telegram"
   await event.reply(
     helptext,
     link_preview=False,
     buttons=(
       [
-        Button.url('📣 Channel', 'https://t.me/PingUs'),
+        Button.url('📣 Channel', 'https://t.me/PingUsNow'),
         Button.url('📦 Source', 'https://github.com/MrHonekawa/PingUsBot')
       ]
     )
